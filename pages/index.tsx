@@ -20,7 +20,7 @@ export default function Home() {
             " 
 
             aria-label="go to homepage">
-              <img src="/fronttailwindgit/public/logo.svg" alt="website logo" className="w-48 md:w-64 lg:w-72"/>
+              <img src="logo.svg" alt="website logo" className="w-48 md:w-64 lg:w-72"/>
             </a>
             <button id="menu" className="
             lg:hidden
