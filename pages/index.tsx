@@ -1,5 +1,26 @@
+import { useState } from 'react';
+import { useRef } from 'react';
+
 
 export default function Home() {
+  const stylez = {menub:'flex-col gap-4 absolute right-0 left-0 top-16 bg-amber-400 shadow-xl text-center text-lg p-6 items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full'}
+  let isExpanded 
+  const menubar = useRef();
+  const menubtn = useRef();
+
+  const [expanded, setExpanded] = useState(false);
+  const [hidden, setHidden] = useState("hidden");
+
+  
+  
+      function handleClick(){
+        isExpanded = JSON.parse(menubtn.current.ariaExpanded);
+        setExpanded(!expanded)
+        console.log(isExpanded)
+        menubtn.current.ariaExpanded = !isExpanded;
+        console.log(isExpanded)
+
+      }
     return (
         <nav className="mx-auto p-4 bg-amber-400">
           <div className="container mx-auto flex items-center justify-between">
@@ -22,7 +43,7 @@ export default function Home() {
             aria-label="go to homepage">
               <img src="logo.svg" alt="website logo" className="w-48 md:w-64 lg:w-72"/>
             </a>
-            <button id="menu" className="
+            <button ref={menubtn} id="menu" onClick={handleClick} className="
             lg:hidden
             focus:outline-none
             focus-visible:ring-4 
@@ -45,28 +66,10 @@ export default function Home() {
 
 
             </button>
-            <div role="menubar" className="
-            flex
-            flex-col
-            gap-4
-            absolute
-            right-0
-            left-0
-            top-16
-            bg-amber-400
-            shadow-xl
-            text-center
-            text-lg
-            p-6
-            items-center
-            lg:flex
-            lg:flex-row
-            lg:static
-            lg:shadow-none
-            lg:justify-between
-            lg:w-full
+            <div ref ={menubar} role="menubar" className={`${(expanded?'flex':'hidden')} ${stylez.menub}`}
+            
 
-            ">
+            >
               <a role="menuitem" className="
               py-1
               px-6
