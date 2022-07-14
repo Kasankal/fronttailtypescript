@@ -15,10 +15,8 @@ export default function Home() {
   
   
       function handleClick(){
-        isExpanded = JSON.parse(menubtn.current.ariaExpanded);
         setExpanded(!expanded)
         console.log(isExpanded)
-        menubtn.current.ariaExpanded = !isExpanded;
         console.log(isExpanded)
 
       }
