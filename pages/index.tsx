@@ -10,16 +10,12 @@ export default function Home() {
   const menubtn = useRef();
 
   const [expanded, setExpanded] = useState(false);
-  const [hidden, setHidden] = useState("hidden");
+    function handleClick(){
+      setExpanded(!expanded)
+       console.log(isExpanded)
+      console.log(isExpanded)
+    }
 
-  
-  
-      function handleClick(){
-        setExpanded(!expanded)
-        console.log(isExpanded)
-        console.log(isExpanded)
-
-      }
     return (
         <nav className="mx-auto p-4 bg-amber-400">
           <div className="container mx-auto flex items-center justify-between">
