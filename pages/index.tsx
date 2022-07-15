@@ -247,6 +247,7 @@ export default function Home() {
                 rounded-full
                 border-8
                 border-amber-400
+                text-amber-400
                 p-4
         
                 '>
@@ -267,6 +268,7 @@ export default function Home() {
                 rounded-full
                 border-8
                 border-amber-400
+                text-amber-400
                 p-4
         
                 '>
@@ -287,6 +289,7 @@ export default function Home() {
                 rounded-full
                 border-8
                 border-amber-400
+                text-amber-400
                 p-4
         
                 '>
@@ -295,7 +298,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className='text-white text-3xl font-bold'>Proven</h3>
-                <p className='text-white'>Lorem ipsum dolor sit amet consectetur.</p>
+                <p className='text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
 
