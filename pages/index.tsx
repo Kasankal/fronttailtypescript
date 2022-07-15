@@ -17,7 +17,7 @@ export default function Home() {
     }
 
     return (
-      <div>
+      <>
          <nav className="mx-auto p-4 bg-amber-400">
           <div className="container mx-auto flex items-center justify-between">
               <a 
@@ -304,7 +304,7 @@ export default function Home() {
 
           </section>
         </main>
-      </div>
+      </>
        
 
 
