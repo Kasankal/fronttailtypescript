@@ -140,9 +140,6 @@ export default function Home() {
                 " >Sign Up </a>
               </Link>
 
-
-
-
             </div>
           </div>
         </nav>
@@ -150,5 +147,8 @@ export default function Home() {
   }
 
       
+
+
+
 
 
