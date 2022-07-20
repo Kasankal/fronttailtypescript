@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useRef } from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import Image from 'next/image';
 
 export default function Home() {
@@ -18,6 +19,9 @@ export default function Home() {
 
     return (
       <>
+         <Head>
+          <title>Tailwind project</title>
+         </Head>
          <nav className="mx-auto p-4 bg-amber-400">
           <div className="container mx-auto flex items-center justify-between">
               <a 
@@ -192,7 +196,6 @@ export default function Home() {
         </header>
         <main className='
         grid
-        grid-12
         sm:gap-16
         md:gap-24
         lg:gap-32
@@ -225,7 +228,7 @@ export default function Home() {
               <span>Download the App</span>
             </a>
           </Link>
-          <section aria-aria-labelledby='qualities' className="relative">
+          <section aria-labelledby='qualities' className="relative">
             <h2 id="qualities" className='sr-only'>Our qualities</h2>
             <div className="container
             mx-auto
